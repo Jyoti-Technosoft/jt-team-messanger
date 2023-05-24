@@ -1,2 +1,2 @@
 # jt-team-messanger
-Jt team messanger for the plain message transfering.
+Jt team messanger for the plain text message transfering.
