@@ -4,29 +4,11 @@ import jwtDecode from "jwt-decode";
 
 export const ShowContext = createContext();
 
-const toastObj = {
-  show: true,
-  msg: "",
-  type: "",
-};
-
-const userdataarr = [
-  {
-    createdAt: "",
-    email: "",
-    firstName: "",
-    gender: "",
-    lastName: "",
-    updatedAt: "",
-    _id: "",
-  },
-];
-
 export const ContextProvider = (props) => {
-  const [userArr, setUserArr] = useState(userdataarr);
+  const [userArr, setUserArr] = useState([]);
   const [currentUserObj, setCurrentUserObj] = useState({});
   const [showUserAccount, setShowUserAccount] = useState(false);
-  const [showToast, setShowToast] = useState(toastObj);
+  const [showToast, setShowToast] = useState({});
   const token = Cookies.get("token");
   let loggedUserId;
   let decodeToken;
