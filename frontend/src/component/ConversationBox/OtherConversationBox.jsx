@@ -1,34 +1,46 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
-import './ConversationBox.scss';
+import "./ConversationBox.scss";
 
 function OtherConversationBox(props) {
+  const [isEmoji, setIsEmoji] = useState(false);
 
-    const [isEmoji, setIsEmoji] = useState(false);
+  useEffect(() => {
+    const regex = /^\p{Extended_Pictographic}{1,2}$/gu;
+    const userMsg = props?.message;
 
-    useEffect(() => {
-        const regex = /^\p{Extended_Pictographic}{1,2}$/ug;        
-        const userMsg = props?.message;
+    const typeOfMsg = regex.test(userMsg);
 
-        const typeOfMsg = regex.test(userMsg);
+    if (typeOfMsg) {
+      setIsEmoji(true);
+    }
+  }, []);
 
-        if (typeOfMsg) {
-            setIsEmoji(true);
-        }
-
-    }, [])
-
-    return (
-        <>
-            <div className="other-message">
-                <div className={`${isEmoji ? 'emoji-other-msg-box' : 'card other-message-box'}`}>
-                    <div className={`${isEmoji ? 'emoji-other-message' : 'card-body message'} `}>
-                        <p className={`${isEmoji ? 'emoji-other-message-text' : 'card-text message-text'}`} >{props?.message}</p>
-                    </div>
-                </div>
-            </div>
-        </>
-    )
+  return (
+    <>
+      <div className="other-message">
+        <div
+          className={`${
+            isEmoji ? "emoji-other-msg-box" : "card other-message-box"
+          }`}
+        >
+          <div
+            className={`${
+              isEmoji ? "emoji-other-message" : "card-body message"
+            } `}
+          >
+            <p
+              className={`${
+                isEmoji ? "emoji-other-message-text" : "card-text message-text"
+              }`}
+            >
+              {props?.message}
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default OtherConversationBox;

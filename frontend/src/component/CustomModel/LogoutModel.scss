@@ -1,21 +1,23 @@
-.custom-model-container{
-    
-    .logout-btn{
-        background-color: #2787f5;
-        padding: 0.5em 1em;
-        border-radius: 0.8em;
-        color: white;
-        margin: 0.5em;
-        cursor: pointer;
-    }
+$base: #2787f5;
+$secondary: #ffffff;
 
-    .cancel-btn{
-        color: #2787f5 !important;
-        background-color: white;
-        padding: 0.5em 1em;
-        border-radius: 0.8em;
-        color: white;
-        margin: 0.5em;
-        cursor: pointer;
-    }
+.custom-model-container {
+  .logout-btn {
+    background-color: $base;
+    padding: 0.5em 1em;
+    border-radius: 0.8em;
+    color: $secondary;
+    margin: 0.5em;
+    cursor: pointer;
+  }
+
+  .cancel-btn {
+    color: $base !important;
+    background-color: $secondary;
+    padding: 0.5em 1em;
+    border-radius: 0.8em;
+    color: $secondary;
+    margin: 0.5em;
+    cursor: pointer;
+  }
 }
