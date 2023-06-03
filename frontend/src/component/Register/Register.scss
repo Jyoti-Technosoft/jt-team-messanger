@@ -1,0 +1,97 @@
+$base: #2787f5;
+$body-background-color: #f6f9fb;
+$text-color: white;
+$error-color: red;
+$input-background: #ebf1f7;
+
+.register {
+
+    .register-info {
+        background-color: $body-background-color;
+        width: 20em;
+        height: 100vh;
+
+        .register-card {
+            height: 95vh;
+            background-color: $base;
+            color: $text-color;
+            border-radius: 0.5em;
+
+            .register-img{
+                width: -webkit-fill-available;
+            }
+        }
+    }
+
+    .register-user-input {
+        background-color: $body-background-color;
+        width: calc(100vw - 20em);
+        height: 100vh;
+        padding-right: 1.5em;
+        overflow-y: scroll;
+
+        .register-title{
+            display: none;
+            color: $base;
+        }
+
+        .register-form-input {
+            border-radius: 0.8em;
+            background-color: $input-background;
+        }
+
+        .register-form-input:focus{
+            border: none;
+            outline: none;
+        }
+
+        .register-errors{
+            color: $error-color;
+        }
+
+        .register-sub-btn-div{
+
+            display: flex;
+            
+            .register-sub-btn{
+                padding: 0.5em 1em;
+                border-radius: 1em;
+                background: $base;
+                color: $text-color;
+                border: none;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+        }
+
+        .register-msg{
+            color: green;
+        }
+
+        .register-to-login{
+
+            text-align: left;
+
+            .login-link{
+                color: $base;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    
+    .register-info{
+        display: none;
+    }
+
+    .register-user-input{
+        width: 100vw !important;
+        padding-right: 0.8em !important;
+
+        .register-title{
+            display: block !important;
+        }
+    }
+}
