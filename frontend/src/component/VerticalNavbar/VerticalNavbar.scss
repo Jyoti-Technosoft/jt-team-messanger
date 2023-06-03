@@ -1,0 +1,56 @@
+.nav{
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    overflow-y: scroll;
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        background : transparent;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background : transparent; 
+        border-radius: 10px;
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: transparent; 
+        // border-radius: 10px;
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: transparent; 
+      }
+}
+
+.nav .site-logo .logo img{
+    width: 3em;
+}
+
+.nav{
+    .nav-link{
+        img{
+            width: 2em;
+        }
+    }
+}
+
+.nav{
+    .user{
+        img{
+            width: 3em !important;
+            border-radius: 50%;
+        }
+    }
+}
+
+.nav{
+    .nav-link{
+        margin: 1.5em 0;
+    }
+}
