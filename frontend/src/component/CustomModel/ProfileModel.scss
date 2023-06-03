@@ -1,102 +1,83 @@
+$base: #2787f5;
+$secondary: #ffffff;
+
 .profile-model-div {
+  .profile-model {
+    .user-img {
+      width: 6em;
+      height: 6em;
+      border-radius: 50%;
+      background-image: linear-gradient(
+        95.2deg,
+        rgb(219, 242, 237) 26.8%,
+        rgba(192, 229, 246, 1) 64%
+      );
 
-    .profile-model{
-
-        .user-img {
-            width: 6em;
-            height: 6em;
-            border-radius: 50%;
-            background-image: linear-gradient( 95.2deg, rgb(219, 242, 237) 26.8%, rgba(192,229,246,1) 64% );
-            
-            .first-char-text{
-                color: #2787f5;
-            }
-        }
-        
-        .table-profile{
-
-            .text-left{
-                text-align: left;
-                padding-left: 1.5em;
-            }
-
-            .text-right{
-                text-align: right;
-                padding-right: 1.5em;
-            }
-        }
+      .first-char-text {
+        color: $base;
+      }
     }
 
-    .image img {
-        transition: all 0.5s
-    }
+    .table-profile {
+      .text-left {
+        text-align: left;
+        padding-left: 1.5em;
+      }
 
-    .card:hover .image img {
-        transform: scale(1.5)
+      .text-right {
+        text-align: right;
+        padding-right: 1.5em;
+      }
     }
+  }
 
-    .btn {
-        height: 140px;
-        width: 140px;
-        border-radius: 50%
-    }
+  .btn {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+  }
 
-    .name {
-        font-size: 22px;
-        font-weight: bold
-    }
+  .number {
+    font-size: 22px;
+    font-weight: bold;
+  }
 
-    .idd {
-        font-size: 14px;
-        font-weight: 600;
-    }
+  .follow {
+    font-size: 12px;
+    font-weight: 500;
+    color: #444444;
+  }
 
-    .idd1 {
-        font-size: 12px;
-    }
+  .btn1 {
+    height: 40px;
+    width: 150px;
+    border: none;
+    background-color: #000;
+    color: #aeaeae;
+    font-size: 15px;
+  }
 
-    .number {
-        font-size: 22px;
-        font-weight: bold;
-    }
+  .text span {
+    font-size: 13px;
+    color: #545454;
+    font-weight: 500;
+  }
 
-    .follow {
-        font-size: 12px;
-        font-weight: 500;
-        color: #444444
-    }
+  .icons i {
+    font-size: 19px;
+  }
 
-    .btn1 {
-        height: 40px;
-        width: 150px;
-        border: none;
-        background-color: #000;
-        color: #aeaeae;
-        font-size: 15px
-    }
+  hr .new1 {
+    border: 1px solid;
+  }
 
-    .text span {
-        font-size: 13px;
-        color: #545454;
-        font-weight: 500
-    }
+  .join {
+    font-size: 14px;
+    color: #3e3c3c;
+    font-weight: bold;
+  }
 
-    .icons i {
-        font-size: 19px
-    }
-
-    hr .new1 {
-        border: 1px solid
-    }
-
-    .join {
-        font-size: 14px;
-        color: #3e3c3c;
-        font-weight: bold;
-    }
-
-    .date {
-        background-color: #ccc
-    }
-    
+  .date {
+    background-color: #ccc;
+  }
 }

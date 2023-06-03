@@ -1,76 +1,69 @@
 .other-message {
+  .other-message-box {
+    width: fit-content;
+    max-width: 50%;
+    margin: 1em 0 1em 2.5em !important;
+    background-color: #f6f9fb;
+    border: none;
 
-    .other-message-box {
-        width: fit-content ;
-        max-width: 50%;
-        margin: 1em 0 1em 2.5em !important;
-        background-color: #f6f9fb;
-        border: none;
+    .message {
+      border-radius: 0.5em;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-        .message {
-            border-radius: 0.5em;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-            .message-text {
-                opacity: 1;
-            }
-        }
+      .message-text {
+        opacity: 1;
+      }
     }
+  }
 
-    .emoji-other-msg-box{
-        background-color: transparent !important;
-        max-width: 50%;
-        margin-left: 2.5em !important;
-        border: none;
+  .emoji-other-msg-box {
+    background-color: transparent !important;
+    max-width: 50%;
+    margin-left: 2.5em !important;
+    border: none;
 
-        .emoji-other-message{
-            box-shadow: none !important; 
+    .emoji-other-message {
+      box-shadow: none !important;
 
-            .emoji-other-message-text{
-                font-size: 2em !important;
-            }
-        }
-
+      .emoji-other-message-text {
+        font-size: 2em !important;
+      }
     }
-    
+  }
 }
 
 .my-box-container {
+  .my-message-box {
+    max-width: 50%;
+    margin: 0.5em 2.5em 0.5em 0em !important;
+    background-color: #2787f5;
+    color: white;
 
-    .my-message-box {
-        max-width: 50%;
-        margin: 0.5em 2.5em 0.5em 0em !important;
-        background-color: #2787f5;
-        color: white;
-
-        .my-message {
-            border-radius: 0.5em;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        }
+    .my-message {
+      border-radius: 0.5em;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
+  }
 
-    .emoji-my-msg-box{
-        background-color: transparent !important;
-        max-width: 50%;
-        margin-right: 2.5em !important;
+  .emoji-my-msg-box {
+    background-color: transparent !important;
+    max-width: 50%;
+    margin-right: 2.5em !important;
 
-        .emoji-my-message{
-            box-shadow: none !important; 
+    .emoji-my-message {
+      box-shadow: none !important;
 
-            .emoji-my-message-text{
-                font-size: 2em !important;
-                margin-top: 8px;
-                margin-bottom: 8px;
-            }
-        }
-
+      .emoji-my-message-text {
+        font-size: 2em !important;
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
     }
+  }
 }
 
 @media only screen and (max-width: 850px) {
-    
-    .other-message {
-        margin-left: -1em;
-    }
-
+  .other-message {
+    margin-left: -1em;
+  }
 }

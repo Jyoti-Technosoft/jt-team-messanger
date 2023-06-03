@@ -4,85 +4,80 @@ $text-color: white;
 $error-color: red;
 
 .login {
+  .login-info {
+    background-color: $body-background-color;
+    width: 20em;
+    height: 100vh;
 
-    .login-info {
-        background-color: $body-background-color;
-        width: 20em;
-        height: 100vh;
+    .login-card {
+      height: 95vh;
+      background-color: $base_color;
+      color: $text-color;
+      border-radius: 0.5em;
 
-        .login-card {
-            height: 95vh;
-            background-color: $base_color;
-            color: $text-color;
-            border-radius: 0.5em;
+      .login-img {
+        width: -webkit-fill-available;
+      }
+    }
+  }
 
-            .login-img{
-                width: -webkit-fill-available;
-            }
-        }
+  .login-user-input {
+    background-color: $body-background-color;
+    width: calc(100vw - 20em);
+    height: 100vh;
+    padding-right: 1.5em;
+    overflow-y: scroll;
+
+    .login-title {
+      color: $base_color;
+      display: none;
     }
 
-    .login-user-input {
-        background-color: $body-background-color;
-        width: calc(100vw - 20em);
-        height: 100vh;
-        padding-right: 1.5em;
-        overflow-y: scroll;
-
-        .login-title{
-            color: $base_color;
-            display: none;
-        }
-
-        .login-form-input {
-            width: 100%;
-            border-radius: 0.8em;
-            background-color: #ebf1f7;
-        }
-
-        .login-form-input:focus{
-            border: none;
-            outline: none;
-        }
-
-        .login-errors{
-            color: $error-color;
-        }
-
-        .login-sub-btn-div{
-            
-            .login-sub-btn{
-                padding: 0.5em 1em;
-                border-radius: 1em;
-                background: $base_color;
-                color: $text-color;
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            }
-        }
-
-        .login-to-register{
-
-            .signup-link{
-                color: $base_color;
-                cursor: pointer;
-            }
-        }
+    .login-form-input {
+      width: 100%;
+      border-radius: 0.8em;
+      background-color: #ebf1f7;
     }
 
+    .login-form-input:focus {
+      border: none;
+      outline: none;
+    }
+
+    .login-errors {
+      color: $error-color;
+    }
+
+    .login-sub-btn-div {
+      .login-sub-btn {
+        padding: 0.5em 1em;
+        border-radius: 1em;
+        background: $base_color;
+        color: $text-color;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+    }
+
+    .login-to-register {
+      .signup-link {
+        color: $base_color;
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 650px) {
-    
-    .login-info{
-        display: none;
-    }
+  .login-info {
+    display: none;
+  }
 
-    .login-user-input{
-        width: 100vw !important;
-        padding-right: 0.8em !important;
+  .login-user-input {
+    width: 100vw !important;
+    padding-right: 0.8em !important;
 
-        .login-title{
-            display: block !important;
-        }
+    .login-title {
+      display: block !important;
     }
+  }
 }

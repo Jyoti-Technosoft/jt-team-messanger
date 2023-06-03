@@ -3,156 +3,155 @@ $base: #2787f5;
 $secondary: #ebf1f7;
 
 .chat-box {
+  .header-chat-box {
+    height: 5em;
 
-    .header-chat-box {
-        height: 5em;
+    .user-details {
+      padding-top: 1em;
+      position: sticky;
+      width: -webkit-fill-available;
+      top: 0;
+      z-index: 5;
+      background-color: $primary;
+      padding: 1em 0.5em 0 0.5em;
 
-        .user-details {
-            padding-top: 1em;
-            position: sticky;
-            width: -webkit-fill-available;
-            top: 0;
-            z-index: 5;
-            background-color: $primary;
-            padding: 1em 0.5em 0 0.5em;
+      .other-user-icon {
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        background-image: linear-gradient(
+          95.2deg,
+          rgb(219, 242, 237) 26.8%,
+          rgba(192, 229, 246, 1) 64%
+        );
 
-            .other-user-icon {
-                width: 3em;
-                height: 3em;
-                border-radius: 50%;
-                background-image: linear-gradient(95.2deg,
-                        rgb(219, 242, 237) 26.8%,
-                        rgba(192, 229, 246, 1) 64%);
-
-                .first-char-text {
-                    color: $base;
-                }
-            }
-
-            .other-user-name {
-                position: absolute;
-                top: 1em;
-                left: 4.7em;
-            }
-
-            .other-user-status {
-                position: absolute;
-                top: 2.5em;
-                left: 4.7em;
-                color: rgb(121, 116, 116);
-            }
-
-            .back-btn {
-                display: none;
-                position: absolute;
-                left: 1em;
-                top: 1em;
-
-                .back-btn-img {
-                    width: 3em;
-                    height: 3em;
-                    cursor: pointer;
-                }
-            }
-
-            hr {
-                opacity: 0.2;
-            }
+        .first-char-text {
+          color: $base;
         }
-    }
+      }
 
-    .message-chat-box {
-        height: calc(100vh - 5em - 5em);
-        overflow: scroll;
-    }
+      .other-user-name {
+        position: absolute;
+        top: 1em;
+        left: 4.7em;
+      }
 
-    .input-chat-box {
-        height: 5em;
-        width: -webkit-fill-available;
-        padding-bottom: 1em;
-        background-color: $primary;
-        padding: 0.5em 0.5em 1em 0.5em;
+      .other-user-status {
+        position: absolute;
+        top: 2.5em;
+        left: 4.7em;
+        color: rgb(121, 116, 116);
+      }
 
-        .message-div {
+      .back-btn {
+        display: none;
+        position: absolute;
+        left: 1em;
+        top: 1em;
 
-            .message-input {
-                padding: 1em 4em 1em 3em;
-                font-weight: 400;
-                line-height: 1.6;
-                background-color: $secondary;
-                width: 99%;
-                border-radius: 2em;
-            }
-
-            .message-input:focus {
-                border: none;
-                outline: none;
-            }
-
-            .send-btn {
-                right: 1em;
-                top: 0.5em;
-                background: transparent;
-
-                .send-btn-img {
-                    width: 2.5em;
-                    height: 2.5em;
-                }
-            }
-
-            .attach-btn {
-                top: 0.9em;
-                left: 1em;
-                background: transparent;
-                cursor: pointer;
-
-                .attach-btn-img {
-                    width: 1.2em;
-                    height: 1.2em;
-                }
-
-                .active-emoji {
-                    display: block;
-                }
-
-                .inactive-emoji {
-                    display: none;
-                }
-            }
+        .back-btn-img {
+          width: 3em;
+          height: 3em;
+          cursor: pointer;
         }
+      }
+
+      hr {
+        opacity: 0.2;
+      }
     }
+  }
+
+  .message-chat-box {
+    height: calc(100vh - 5em - 5em);
+    overflow: scroll;
+  }
+
+  .input-chat-box {
+    height: 5em;
+    width: -webkit-fill-available;
+    padding-bottom: 1em;
+    background-color: $primary;
+    padding: 0.5em 0.5em 1em 0.5em;
+
+    .message-div {
+      .message-input {
+        padding: 1em 4em 1em 3em;
+        font-weight: 400;
+        line-height: 1.6;
+        background-color: $secondary;
+        width: 99%;
+        border-radius: 2em;
+      }
+
+      .message-input:focus {
+        border: none;
+        outline: none;
+      }
+
+      .send-btn {
+        right: 1em;
+        top: 0.5em;
+        background: transparent;
+
+        .send-btn-img {
+          width: 2.5em;
+          height: 2.5em;
+        }
+      }
+
+      .attach-btn {
+        top: 0.9em;
+        left: 1em;
+        background: transparent;
+        cursor: pointer;
+
+        .attach-btn-img {
+          width: 1.2em;
+          height: 1.2em;
+        }
+
+        .active-emoji {
+          display: block;
+        }
+
+        .inactive-emoji {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 .emoji-popover {
-    max-width: fit-content;
-    inset: auto auto 13px 165px !important;
+  max-width: fit-content;
+  inset: auto auto 13px 165px !important;
 }
 
 @media only screen and (max-width: 850px) {
-    .back-btn {
-        display: block !important;
-    }
+  .back-btn {
+    display: block !important;
+  }
 
-    .my-box-container {
-        margin-right: -1.4em;
-        padding-bottom: 0.5em !important;
-    }
+  .my-box-container {
+    margin-right: -1.4em;
+    padding-bottom: 0.5em !important;
+  }
 
-    .other-user-icon {
-        margin-left: 4em;
-    }
+  .other-user-icon {
+    margin-left: 4em;
+  }
 
-    .other-user-name {
-        left: 8.7em !important;
-    }
+  .other-user-name {
+    left: 8.7em !important;
+  }
 
-    .other-user-status {
-        left: 8.7em !important;
-    }
+  .other-user-status {
+    left: 8.7em !important;
+  }
 
-    .emoji-popover {
-        max-width: fit-content;
-        inset: auto auto 0px 0px !important;
-    }
-
+  .emoji-popover {
+    max-width: fit-content;
+    inset: auto auto 0px 0px !important;
+  }
 }

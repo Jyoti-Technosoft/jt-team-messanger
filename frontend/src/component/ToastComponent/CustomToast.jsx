@@ -1,10 +1,11 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { ToastContainer } from "react-bootstrap";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Toast from "react-bootstrap/Toast";
 import { ShowContext } from "../Context/Context";
 import "./CustomToast.scss";
+import { ERROR, SUCCESS, WARNING } from "../Util/constant";
 
 function CustomToast() {
   const { showToast, setShowToast } = useContext(ShowContext);
@@ -15,7 +16,7 @@ function CustomToast() {
       <div>
         {(() => {
           switch (status) {
-            case "success":
+            case SUCCESS:
               return (
                 <Row>
                   <Col xs={6}>
@@ -61,7 +62,7 @@ function CustomToast() {
                   </Col>
                 </Row>
               );
-            case "error":
+            case ERROR:
               return (
                 <Row>
                   <Col xs={6}>
@@ -85,7 +86,14 @@ function CustomToast() {
                         <Toast.Body className="toast-body-error p-0">
                           <div className="d-flex">
                             <div className="d-flex justify-content-center align-items-center px-2 ">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-x" viewBox="0 0 16 16">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="30"
+                                height="30"
+                                fill="currentColor"
+                                className="bi bi-x"
+                                viewBox="0 0 16 16"
+                              >
                                 <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
                               </svg>
                             </div>
@@ -100,7 +108,7 @@ function CustomToast() {
                   </Col>
                 </Row>
               );
-            case "warning":
+            case WARNING:
               return (
                 <Row>
                   <Col xs={6}>
@@ -124,7 +132,14 @@ function CustomToast() {
                         <Toast.Body className="toast-body-warning p-0">
                           <div className="d-flex">
                             <div className="d-flex justify-content-center align-items-center px-2 ">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-x" viewBox="0 0 16 16">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="30"
+                                height="30"
+                                fill="currentColor"
+                                className="bi bi-x"
+                                viewBox="0 0 16 16"
+                              >
                                 <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
                               </svg>
                             </div>
